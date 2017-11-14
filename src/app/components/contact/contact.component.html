@@ -1,16 +1,17 @@
-<h1>Contact Me</h1>
-<p>Name</p>
-<input type ="text" [(ngModel)]="name" name="name">
-<p>Email</p>
-<input type ="text" [(ngModel)]="email">
-<p>Note</p>
-<textarea cols="30" rows="10" type ="textbox"  [(ngModel)]="note"></textarea>
-<button (click)="sendEmail()">Submit</button>
-
-<div ng-if = "emailResponse">
-        <p>{{emailResponse}}</p> 
+<div class="container">
+                <h1>Contact Me</h1>
+                
+        <div class="row">
+                <div class="col-md-6">
+                        <p>Name</p>
+                        <input type="text" [(ngModel)]="name" name="name">
+                        <p>Email</p>
+                        <input type="text" [(ngModel)]="email">
+                        <p>Note</p>
+                        <textarea cols="30" rows="10" type="textbox" [(ngModel)]="note"></textarea>
+                        <button (click)="sendEmail()">Submit</button>
+                </div>
+                <div class="col-md-6">
+                        <ngb-alert *ngIf="emailResponse" type="success" (close)="successMessage = null">{{ emailResponse }}</ngb-alert>
+        </div>
 </div>
-   
-
-
-

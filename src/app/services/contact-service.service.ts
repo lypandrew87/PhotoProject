@@ -11,7 +11,7 @@ export class ContactService {
 
   sendEmail(email, name, note){
     var Indata = {email, name, note}; 
-  return this.http.post("http://localhost:3000/email",Indata); 
+  return this.http.post("http://localhost:8080/email",Indata); 
  }
 
  }

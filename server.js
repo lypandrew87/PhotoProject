@@ -33,7 +33,6 @@ app.post('/email',  (req, res) => {
           service: "Gmail",
           auth: {
               user: "lypandrew87@gmail.com",
-              
           }
       });
     
