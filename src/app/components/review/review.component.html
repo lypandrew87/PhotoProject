@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+.heading {
+    height: 100%;
+}
+
+html, body
+{
+    height: 130%;
+}
+
+@media (max-width:768px) { 
+
+  .letter{
+    display: none; 
+  }
+  .image{
+    display: none; 
+  }
+  .heading {
+    height: 0px; 
+ }
+ html, body
+{
+    height: 0px; 
+}
+}
+
+.image{
+  font-size: 30px; 
+  position: absolute;
+  right: 15%;
+  bottom: 30%;
+  left: 15%;
+  z-index: 10;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   color: #000000;
+   text-align: center;
+  }
+  .letter{
+  font-size: 30px; 
+  position: absolute;
+  right: 15%;
+  bottom: -80%;
+  left: 15%;
+  z-index: 10;
+   padding-top: 5px;
+   padding-bottom: 5px;
+   color: #FFFFFF;
+   text-align: center;
+  }
+
+
+.parallax { 
+    /* The image used */
+    background-image: url("../assets/carousel2.jpg");
+    
+    /* Full height */
+    height: 100%; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+</style>
+
+
+
+<div class="heading">
+<div class="parallax"></div>
+<div class="image">
+    <img src="../assets/nicolelogo.png" alt="Mountain View">
+</div>
+<div class="letter">
+<h3 >Nicole's Pederson Photography</h3>
+<p>Minneapolis/Saint Paul Wedding and Couples Photographer</p>
+</div>
+</div>
+
+
+</html>

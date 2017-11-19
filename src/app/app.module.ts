@@ -10,6 +10,7 @@ import {ContactService} from './services/contact-service.service';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {CarouselComponent } from './components/carousel/carousel.component';
 import {PortfolioComponent} from './components/portfolio/portfolio.component';
+import { ReviewComponent } from './components/review/review.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {PortfolioComponent} from './components/portfolio/portfolio.component';
     AboutComponent,
     ContactComponent,
     CarouselComponent,
-    PortfolioComponent
+    PortfolioComponent,
+    ReviewComponent
   ],
   imports: [
     BrowserModule,
