@@ -19,7 +19,7 @@ import { ReviewComponent } from './components/review/review.component';
     ContactComponent,
     CarouselComponent,
     PortfolioComponent,
-    ReviewComponent
+    ReviewComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,25 +1,44 @@
 <br>
+
+<style>
+  .hovered{
+    opacity: 0;
+  }
+  .image1, .image2, .image3 {
+    position: relative;
+    opacity: 0; 
+    transform: translateX(-100px); 
+    transition: all 0.3s ease-in-out; 
+    padding: 30px
+
+    }
+    .image1 h1,.image2 h1,.image3 h1 {
+      position: absolute;
+      bottom: 50%;
+      text-align: center;
+      width: 100%;
+    }
+    .is-showing{
+      opacity: 1; 
+      transform: translateX(0); 
+    }
+</style>
 <div  class="container">
   <div class="row">
-    <div align="center" class="col-xl-4 col-lg-1">
-      <h1>Weddings</h1>
-      <div style="border: #000000 6px outset;">
-        <a href="google.com"><img  src="../assets/weddingFrontPage1.jpg" style="max-width:100%; height: auto;"></a>
+    <div align="center" class="image1 col-xl-4 col-lg-1">
+      <h1 class="info">Weddings</h1>
+        <img  src="../assets/weddingFrontPage1.jpg" style="max-width:100%; height: auto;">
       </div>
-    </div>
-    <div align="center" class="col-xl-4 col-lg-1">
-      <h1>Couples</h1>
-      <div style="border: #8B8B8B 6px outset;">
+      <br>
+    <div align="center" class="image1 col-xl-4 col-lg-1">
+      <h1 class="info">Couples</h1>
+        <img src="../assets/couplesFrontPage1.jpg" style="max-width:100%; height: auto;" >
+      </div>
+      <br> 
+    <div align="center" class="image1 col-xl-4 col-lg-1">
+      <h1 class="info">Professional</h1>
 
-        <a href="google.com"><img src="../assets/couplesFrontPage1.jpg" style="max-width:100%; height: auto;" ></a>
-      </div>
-    </div>
-    <div align="center" class="col-xl-4 col-lg-1">
-      <h1>Professional</h1>
-      <div style="border: #0A0A0A 6px outset;">
-
-        <a href="google.com"><img src="../assets/professionalFrontPage1.jpg" style="max-width:100%; height: auto;" ></a>
-      </div>
+       <img src="../assets/professionalFrontPage1.jpg" style="max-width:100%; height: auto;" >
   </div>
   </div>
 </div>
