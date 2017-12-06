@@ -11,6 +11,11 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {CarouselComponent } from './components/carousel/carousel.component';
 import {PortfolioComponent} from './components/portfolio/portfolio.component';
 import { ReviewComponent } from './components/review/review.component';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+import { ModalModule } from 'ngx-bootstrap/modal';
+import { NavbarComponent } from './navbar/navbar.component';
+
 
 @NgModule({
   declarations: [
@@ -20,11 +25,16 @@ import { ReviewComponent } from './components/review/review.component';
     CarouselComponent,
     PortfolioComponent,
     ReviewComponent,
+    NavbarComponent,
+    
   ],
   imports: [
     BrowserModule,
     FormsModule,
     HttpModule,
+    BsDropdownModule.forRoot(),
+    TooltipModule.forRoot(),
+    ModalModule.forRoot(),
     NgbModule.forRoot(),
     RouterModule.forRoot([
       {
